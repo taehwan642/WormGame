@@ -161,6 +161,9 @@
     <ClCompile Include="Worm.cpp">
       <Filter>GAME\WormGame</Filter>
     </ClCompile>
+    <ClCompile Include="Fruit.cpp">
+      <Filter>GAME\WormGame</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CLInclude Include="resource.h">
@@ -206,6 +209,9 @@
       <Filter>GAME\Scene\MainScene</Filter>
     </ClInclude>
     <ClInclude Include="Worm.h">
+      <Filter>GAME\WormGame</Filter>
+    </ClInclude>
+    <ClInclude Include="Fruit.h">
       <Filter>GAME\WormGame</Filter>
     </ClInclude>
   </ItemGroup>

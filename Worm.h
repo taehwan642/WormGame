@@ -18,6 +18,7 @@ public:
 	Body* Head;
 	Body* Tail;
 	Body* Temp;
+	vector<Body*> bods;
 	Worm();
 	void Insert();
 	void SetMove();

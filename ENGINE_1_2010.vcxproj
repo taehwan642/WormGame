@@ -386,6 +386,7 @@
   <ItemGroup>
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Director.cpp" />
+    <ClCompile Include="Fruit.cpp" />
     <ClCompile Include="GameScene.cpp" />
     <ClCompile Include="Label.cpp" />
     <ClCompile Include="MainScene.cpp" />
@@ -399,6 +400,7 @@
     <ClCompile Include="Worm.cpp" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Director.h" />
+    <ClInclude Include="Fruit.h" />
     <ClInclude Include="GameScene.h" />
     <ClInclude Include="Label.h" />
     <ClInclude Include="MainScene.h" />
