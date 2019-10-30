@@ -19,7 +19,6 @@ void GameScene::Update()
 	if (timer > movetime)
 	{
 		asdf->WormMove();
-		movetime += -0.0025;
 		timer = 0;
 	}
 
