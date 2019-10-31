@@ -4,10 +4,10 @@ class Fruit : public Sprite
 {
 public:
 	Fruit();
-	
 };
 
 class FruitMNG : public Singleton<FruitMNG>
 {
+public:
 	vector<Fruit> fruits;
 };

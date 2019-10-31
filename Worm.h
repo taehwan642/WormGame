@@ -7,6 +7,7 @@ public:
 	Body();
 	void Move();
 	void SetDirection();
+	bool ForHeadCollision();
 	Body* front;
 	Body* next;
 	Direction dir;

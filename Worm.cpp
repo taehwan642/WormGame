@@ -40,7 +40,6 @@ Body::Body()
 	front = nullptr;
 }
 
-
 void Body::Move()
 {
 	switch (dir)
@@ -64,6 +63,10 @@ void Body::SetDirection()
 {
 
 }
+bool Body::ForHeadCollision()
+{
+	return false;
+}
 ///////////////////////////////////////////////////////
 Worm::Worm()
 {
@@ -74,6 +77,7 @@ Worm::Worm()
 void Worm::Insert()
 {
 	Body* body = new Body(Tail);
+	bods.push_back(body);
 	body->front = Tail;
 	Tail->next = body;
 	Tail = body;
@@ -107,6 +111,14 @@ void Worm::AddBody()
 
 bool Worm::IsCollision()
 {
+	//for (auto it : bods)
+	//{
+	//	RECT bodyRECT;
+	//	if (IntersectRect(&bodyRECT, &Head->GetRect(), &it->GetRect()))
+	//	{
+	//		return true;
+	//	}
+	//}
 	/*switch (dir)
 	{
 	case Direction::Down:
@@ -122,6 +134,15 @@ bool Worm::IsCollision()
 		_position.x += 50;
 		break;
 	}*/
+	for (auto it : bods)
+	{
+		if (Head->dir == Right && Head->_position.x == it->_position.x - 50)
+		{
+			cout << "on" << endl;
+			return true;
+		}
+	}
+
 	return false;
 }
 

@@ -14,6 +14,8 @@ void GameScene::Update()
 	if (DXUTWasKeyPressed('P'))
 		Director::GetInstance()->ChangeScene(new MainScene);
 
+	asdf->IsCollision();
+
 	timer += Time::deltaTime;
 
 	if (timer > movetime)
