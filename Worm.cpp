@@ -34,7 +34,7 @@ Body::Body()
 	Create(L"JIRUNG.png");
 	isUI = true;
 	_visible = true;
-	_position = { 640,360 };
+	_position = { 650,350 };
 	dir = Down;
 	next = nullptr;
 	front = nullptr;
@@ -42,6 +42,7 @@ Body::Body()
 
 void Body::Move()
 {
+	cout << _position.x << " " << _position.y << endl;
 	switch (dir)
 	{
 	case Direction::Down:
@@ -136,11 +137,24 @@ bool Worm::IsCollision()
 	}*/
 	for (auto it : bods)
 	{
-		if (Head->dir == Right && Head->_position.x == it->_position.x - 50)
+		if (Head->dir == Right && Head->_position.x + 100 == it->_position.x)
 		{
-			cout << "on" << endl;
 			return true;
 		}
+		if (Head->dir == Left && Head->_position.x + -100 == it->_position.x)
+		{
+			return true;
+		}
+		if (Head->dir == Up && Head->_position.y + -100 == it->_position.y)
+		{
+			return true;
+		}
+		if (Head->dir == Down && Head->_position.y + 100 == it->_position.y)
+		{
+			return true;
+		}
+		/*if (Head->_position.x == it->_position.x || Head->_position.y == it->_position.y)
+			return true;*/
 	}
 
 	return false;

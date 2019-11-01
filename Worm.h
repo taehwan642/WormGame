@@ -13,7 +13,7 @@ public:
 	Direction dir;
 };
 
-class Worm
+class Worm : public Singleton <Worm>
 {
 public:
 	Body* Head;

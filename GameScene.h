@@ -5,12 +5,14 @@
 #include "Camera.h"
 #include "MainScene.h"
 #include "Worm.h"
+#include "Fruit.h"
 class GameScene :
 	public Scene
 {
 public:
 	Worm* asdf;
 	float timer;
+	float FruitCreateTimer;
 	float movetime;
 	void Init() override;
 	void Update() override;
