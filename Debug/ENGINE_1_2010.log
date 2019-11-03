@@ -1,6 +1,2 @@
-﻿  Fruit.cpp
-C:\Users\taehw\OneDrive\바탕 화면\WormGame-master (2)\WormGame-master\Fruit.cpp(20): warning C4238: nonstandard extension used: class rvalue used as lvalue
-C:\Users\taehw\OneDrive\바탕 화면\WormGame-master (2)\WormGame-master\Fruit.cpp(20,35): warning C4238: nonstandard extension used: class rvalue used as lvalue
-C:\Users\taehw\OneDrive\바탕 화면\WormGame-master (2)\WormGame-master\Fruit.cpp(20,74): warning C4238: nonstandard extension used: class rvalue used as lvalue
-C:\Users\taehw\OneDrive\바탕 화면\WormGame-master (2)\WormGame-master\Fruit.cpp(73): warning C4702: unreachable code
-  ENGINE_1_2010.vcxproj -> C:\Users\taehw\OneDrive\바탕 화면\WormGame-master (2)\WormGame-master\Debug\ENGINE_1.exe
+﻿  GameScene.cpp
+  ENGINE_1_2010.vcxproj -> C:\Users\skill_7\Downloads\WormGame-master\WormGame-master\Debug\ENGINE_1.exe

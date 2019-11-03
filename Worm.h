@@ -1,19 +1,22 @@
 #pragma once
 #include "Sprite.h"
+#include "Fruit.h"
 class Body : public Sprite
 {
 public:
 	Body(Body* tail);
 	Body();
+	void Update() override;
 	void Move();
 	void SetDirection();
+	void SetRotation();
 	bool ForHeadCollision();
 	Body* front;
 	Body* next;
 	Direction dir;
 };
 
-class Worm : public Singleton <Worm>
+class Worm
 {
 public:
 	Body* Head;
@@ -28,4 +31,6 @@ public:
 	bool IsCollision();
 	bool IsScreenOut();
 	bool AteFruit();
+	bool FruitCollide();
+	void DeleteAll();
 };
