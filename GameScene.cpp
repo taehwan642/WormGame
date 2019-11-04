@@ -12,6 +12,7 @@ void GameScene::Init()
 
 void GameScene::Update()
 {
+	
 	if (DXUTWasKeyPressed('P'))
 		Director::GetInstance()->ChangeScene(new MainScene);
 

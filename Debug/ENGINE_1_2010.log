@@ -1,3 +1,2 @@
-﻿  ENGINE_1.cpp
-C:\Users\skill_7\Desktop\WormGame-master\WormGame-master\ENGINE_1.cpp(18,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+﻿  MainScene.cpp
   ENGINE_1_2010.vcxproj -> C:\Users\skill_7\Desktop\WormGame-master\WormGame-master\Debug\ENGINE_1.exe

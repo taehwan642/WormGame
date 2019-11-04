@@ -11,6 +11,7 @@ class GameScene :
 {
 public:
 	Worm* asdf;
+	POINT pos;
 	float timer;
 	float FruitCreateTimer;
 	float movetime;
