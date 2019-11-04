@@ -6,8 +6,7 @@ void GameScene::Init()
 	cout << "Game" << endl;
 	asdf = new Worm();
 	timer = 0;
-	FruitCreateTimer = 0;
-	movetime = 0.3f;
+	movetime = 0.4f;
 	FruitMNG::GetInstance()->SpawnFruit();
 }
 
@@ -16,27 +15,27 @@ void GameScene::Update()
 	if (DXUTWasKeyPressed('P'))
 		Director::GetInstance()->ChangeScene(new MainScene);
 
-	//asdf->IsCollision();
-
-	
-
+	if (asdf->IsScreenOut())
+	{
+		cout << "GG" << endl;
+		Director::GetInstance()->ChangeScene(new MainScene);
+	}
 
 	timer += Time::deltaTime;
-	FruitCreateTimer += Time::deltaTime;
 
 	if (timer > movetime)
 	{
 		asdf->WormMove();
 		if (asdf->IsCollision())
 		{
-			Director::GetInstance()->ChangeScene(new GameScene);
+			Director::GetInstance()->ChangeScene(new MainScene);
 		}
 		timer = 0;
 	}
 
 	if (asdf->FruitCollide())
 	{
-		if(movetime >= 0.1f)
+		if(movetime >= 0.15f)
 			movetime -= 0.05f;
 	}
 
@@ -56,14 +55,10 @@ void GameScene::Update()
 	{
 		asdf->Head->dir = Right;
 	}
-
-	if (DXUTWasKeyPressed(VK_SPACE))
-	{
-		asdf->Insert();
-	}
 }
 
 void GameScene::OnExit()
 {
 	asdf->DeleteAll();
+	FruitMNG::GetInstance()->DeleteFruit();
 }

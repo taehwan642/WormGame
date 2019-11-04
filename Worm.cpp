@@ -40,12 +40,6 @@ Body::Body()
 	front = nullptr;
 }
 
-void Body::Update()
-{
-	 
-	
-}
-
 void Body::Move()
 {
 	switch (dir)
@@ -66,10 +60,6 @@ void Body::Move()
 	SetRotation();
 }
 
-void Body::SetDirection()
-{
-
-}
 void Body::SetRotation()
 {
 	switch (dir)
@@ -88,10 +78,7 @@ void Body::SetRotation()
 		break;
 	}
 }
-bool Body::ForHeadCollision()
-{
-	return false;
-}
+
 ///////////////////////////////////////////////////////
 Worm::Worm()
 {
@@ -131,59 +118,8 @@ void Worm::WormMove()
 	SetMove();
 }
 
-void Worm::AddBody()
-{
-
-}
-
 bool Worm::IsCollision()
 {
-	////for (auto it : bods)
-	////{
-	////	RECT bodyRECT;
-	////	if (IntersectRect(&bodyRECT, &Head->GetRect(), &it->GetRect()))
-	////	{
-	////		return true;
-	////	}
-	////}
-	///*switch (dir)
-	//{
-	//case Direction::Down:
-	//	_position.y += 50;
-	//	break;
-	//case Direction::Up:
-	//	_position.y += -50;
-	//	break;
-	//case Direction::Left:
-	//	_position.x += -50;
-	//	break;
-	//case Direction::Right:
-	//	_position.x += 50;
-	//	break;
-	//}*/
-	//for (auto it : bods)
-	//{
-	//	if (Head->dir == Right && Head->_position.x + 100 == it->_position.x)
-	//	{
-	//		return true;
-	//	}
-	//	if (Head->dir == Left && Head->_position.x + -100 == it->_position.x)
-	//	{
-	//		return true;
-	//	}
-	//	if (Head->dir == Up && Head->_position.y + -100 == it->_position.y)
-	//	{
-	//		return true;
-	//	}
-	//	if (Head->dir == Down && Head->_position.y + 100 == it->_position.y)
-	//	{
-	//		return true;
-	//	}
-	//	/*if (Head->_position.x == it->_position.x || Head->_position.y == it->_position.y)
-	//		return true;*/
-	//}
-
-	//return false
 	Temp = Head->next;
 	while (Temp != NULL)
 	{
@@ -198,13 +134,22 @@ bool Worm::IsCollision()
 
 bool Worm::IsScreenOut()
 {
-
-	return false;
-}
-
-bool Worm::AteFruit()
-{
-
+	if (Head->_position.x > 1200)
+	{
+		return true;
+	}
+	if (Head->_position.x < 50)
+	{
+		return true;
+	}
+	if (Head->_position.y < 50)
+	{
+		return true;
+	}
+	if (Head->_position.y > 600)
+	{
+		return true;
+	}
 	return false;
 }
 

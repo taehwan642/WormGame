@@ -81,9 +81,9 @@ int main()
     DXUTSetHotkeyHandling( true, true, true );  // handle the default hotkeys
     DXUTSetCursorSettings( true, true ); // Show the cursor and clip it when in full screen
     DXUTCreateWindow( L"ENGINE_1" );
-    DXUTCreateDevice( true, 1280, 720 );
+    DXUTCreateDevice( true, 1250, 650 );
 
-	Director::GetInstance()->ChangeScene(new GameScene);
+	Director::GetInstance()->ChangeScene(new MainScene);
 
     // Start the render loop
     DXUTMainLoop();

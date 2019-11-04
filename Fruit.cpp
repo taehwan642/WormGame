@@ -14,10 +14,10 @@ void FruitMNG::SpawnFruit()
 	Fruit* fruit = new Fruit();
 	fruits.push_back(fruit);
 	vector2 pos;
-	pos.x = ((rand() % 10) + 2) * 50;
-	pos.y = ((rand() % 10) + 2) * 50;
-	fruit->_position = pos;
+	pos.x = ((rand() % 20) + 2) * 50;
+	pos.y = ((rand() % 11) + 2) * 50;
 	cout << fruits.size() - 1 << endl;
+	fruit->_position = pos;
 }
 
 void FruitMNG::DeleteFruit()
