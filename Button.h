@@ -3,6 +3,6 @@
 class Button : public Sprite
 {
 public:
-	
+	Button();
 };
 

@@ -399,6 +399,7 @@
     <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="Texture2D.cpp" />
     <ClCompile Include="Types.cpp" />
+    <ClCompile Include="Walls.cpp" />
     <ClCompile Include="Worm.cpp" />
     <ClInclude Include="Button.h" />
     <ClInclude Include="Camera.h" />
@@ -415,6 +416,7 @@
     <ClInclude Include="Sprite.h" />
     <ClInclude Include="Texture2D.h" />
     <ClInclude Include="Types.h" />
+    <ClInclude Include="Walls.h" />
     <ClInclude Include="Worm.h" />
     <None Include="DXUT\Optional\directx.ico" />
     <ClInclude Include="DXUT\Core\DXUT.h" />

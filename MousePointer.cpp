@@ -1,6 +1,6 @@
 #include "DXUT.h"
 #include "MousePointer.h"
-
+#include "Sprite.h"
 MousePointer::MousePointer()
 {
 	Create(L"MousePointer.png");
@@ -15,4 +15,9 @@ void MouseMNG::CreateMousePointer()
 void MouseMNG::MouseSet()
 {
 	mouse->_position = Director::GetInstance()->GetMousePos();
+}
+
+void MouseMNG::DeleteMouse()
+{
+	delete mouse;
 }

@@ -2,19 +2,30 @@
 #include "MainScene.h"
 void MainScene::Init()
 {
-	cout << "Main" << endl;
+	startbutton = new Sprite();
+	startbutton->Create(L"StartBTN.png");
 	MouseMNG::GetInstance()->CreateMousePointer();
-	ShowCursor(FALSE);
+	startbutton->_position = { 600,300 };
+	startbutton->isUI = true;
+	cout << "Main" << endl;
+	//ShowCursor(FALSE);
 }
 
 void MainScene::Update()
 {
 	MouseMNG::GetInstance()->MouseSet();
-	if (DXUTWasKeyPressed('P'))
-		Director::GetInstance()->ChangeScene(new GameScene);
+	if (Director::GetInstance()->OnMouseDown())
+	{
+		if (PtInRect(&startbutton->GetRect(), Director::GetInstance()->p))
+		{
+			Director::GetInstance()->ChangeScene(new GameScene);
+		}
+	}
+
 }
 
 void MainScene::OnExit()
 {
-
+	MouseMNG::GetInstance()->DeleteMouse();
+	delete startbutton;
 }

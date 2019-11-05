@@ -134,19 +134,7 @@ bool Worm::IsCollision()
 
 bool Worm::IsScreenOut()
 {
-	if (Head->_position.x > 1200)
-	{
-		return true;
-	}
-	if (Head->_position.x < 50)
-	{
-		return true;
-	}
-	if (Head->_position.y < 50)
-	{
-		return true;
-	}
-	if (Head->_position.y > 600)
+	if ((Head->_position.x > 1200) || (Head->_position.x < 50) || (Head->_position.y > 600) || (Head->_position.y < 50))
 	{
 		return true;
 	}
@@ -159,7 +147,7 @@ bool Worm::FruitCollide()
 	{
 		if (it->_visible)
 		{
-			if (it->_position == Head->_position)
+			if (it->GetDistance(Head) < 50)
 			{
 				FruitMNG::GetInstance()->SpawnFruit();
 				Insert();

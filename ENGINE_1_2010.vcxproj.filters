@@ -173,6 +173,9 @@
     <ClCompile Include="MousePointer.cpp">
       <Filter>GAME\Scene\UI</Filter>
     </ClCompile>
+    <ClCompile Include="Walls.cpp">
+      <Filter>GAME\Scene\UI</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CLInclude Include="resource.h">
@@ -227,6 +230,9 @@
       <Filter>GAME\Scene\UI</Filter>
     </ClInclude>
     <ClInclude Include="MousePointer.h">
+      <Filter>GAME\Scene\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="Walls.h">
       <Filter>GAME\Scene\UI</Filter>
     </ClInclude>
   </ItemGroup>

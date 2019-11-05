@@ -12,6 +12,8 @@ class MouseMNG : public Singleton<MouseMNG>
 {
 public:
 	MousePointer* mouse;
+
 	void CreateMousePointer();
 	void MouseSet();
+	void DeleteMouse();
 };
