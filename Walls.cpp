@@ -9,15 +9,15 @@ Walls::Walls()
 
 void WallsMNG::SetWallPosition()
 {
-	for (int y = 0; y < 23; y++)
+	for (int y = 0; y < 14; y++)
 	{
-		for (int x = 0; x < 43; x++)
+		for (int x = 0; x < 26; x++)
 		{
-			if (x == 0 || x == 41 || y == 0 || y == 21)
+			if (x == 0 || x == 25 || y == 0 || y == 13)
 			{
 				Walls* wall = new Walls();
-				wall->_position.x = x * 30;
-				wall->_position.y = y * 30;
+				wall->_position.x = x * 50;
+				wall->_position.y = y * 50;
 				walls.push_back(wall);
 			}
 
