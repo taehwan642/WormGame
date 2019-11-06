@@ -8,9 +8,15 @@
 class MainScene : public Scene
 {
 public:
-
+	float aboutscaletimer;
+	bool aboutclicked;
 	Sprite* startbutton;
+	Sprite* aboutbutton;
+	Sprite* exitbutton;
+	Sprite* about;
+	Sprite* backGround;
 	MouseMNG* mouse;
+	void aboutScaleSetting();
 	void Init() override;
 	void Update() override;
 	void OnExit() override;
