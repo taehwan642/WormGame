@@ -33,7 +33,6 @@ void ScoreScene::Update()
 	{
 		if (PtInRect(&mainbutton->GetRect(), Director::GetInstance()->p))
 		{
-			cout << "SIBAL" << endl;
 			Director::GetInstance()->ChangeScene(new GameScene);
 		}
 
