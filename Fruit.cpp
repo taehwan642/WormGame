@@ -15,9 +15,7 @@ void FruitMNG::SpawnFruit()
 	vector2 pos;
 	pos.x = ((rand() % 24) + 1) * 50;
 	pos.y = ((rand() % 12) + 1) * 50;
-	cout << fruits.size() - 1 << endl;
 	fruit->_position = pos;
-
 }
 
 void FruitMNG::DeleteFruit()

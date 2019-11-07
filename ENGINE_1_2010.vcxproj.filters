@@ -63,6 +63,9 @@
     <Filter Include="GAME\Scene\UI">
       <UniqueIdentifier>{fd9d1b42-1e68-4460-8cc5-73eeac03739b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="GAME\Scene\ScoreScene">
+      <UniqueIdentifier>{e0de3224-e34c-407e-a22c-c79e804a3335}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <None Include="DXUT\Optional\directx.ico">
@@ -167,14 +170,14 @@
     <ClCompile Include="Fruit.cpp">
       <Filter>GAME\WormGame</Filter>
     </ClCompile>
-    <ClCompile Include="Button.cpp">
-      <Filter>GAME\Scene\UI</Filter>
-    </ClCompile>
     <ClCompile Include="MousePointer.cpp">
       <Filter>GAME\Scene\UI</Filter>
     </ClCompile>
     <ClCompile Include="Walls.cpp">
       <Filter>GAME\Scene\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoreScene.cpp">
+      <Filter>GAME\Scene\ScoreScene</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -226,14 +229,14 @@
     <ClInclude Include="Fruit.h">
       <Filter>GAME\WormGame</Filter>
     </ClInclude>
-    <ClInclude Include="Button.h">
-      <Filter>GAME\Scene\UI</Filter>
-    </ClInclude>
     <ClInclude Include="MousePointer.h">
       <Filter>GAME\Scene\UI</Filter>
     </ClInclude>
     <ClInclude Include="Walls.h">
       <Filter>GAME\Scene\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreScene.h">
+      <Filter>GAME\Scene\ScoreScene</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

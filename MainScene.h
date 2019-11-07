@@ -4,7 +4,6 @@
 #include "GameScene.h"
 #include "MousePointer.h"
 #include "Sprite.h"
-#include "Button.h"
 class MainScene : public Scene
 {
 public:

@@ -384,7 +384,6 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Button.cpp" />
     <ClCompile Include="Camera.cpp" />
     <ClCompile Include="Director.cpp" />
     <ClCompile Include="Fruit.cpp" />
@@ -395,13 +394,13 @@
     <ClCompile Include="Node.cpp" />
     <ClCompile Include="Renderer.cpp" />
     <ClCompile Include="Scene.cpp" />
+    <ClCompile Include="ScoreScene.cpp" />
     <ClCompile Include="Sound.cpp" />
     <ClCompile Include="Sprite.cpp" />
     <ClCompile Include="Texture2D.cpp" />
     <ClCompile Include="Types.cpp" />
     <ClCompile Include="Walls.cpp" />
     <ClCompile Include="Worm.cpp" />
-    <ClInclude Include="Button.h" />
     <ClInclude Include="Camera.h" />
     <ClInclude Include="Director.h" />
     <ClInclude Include="Fruit.h" />
@@ -412,6 +411,7 @@
     <ClInclude Include="Node.h" />
     <ClInclude Include="Renderer.h" />
     <ClInclude Include="Scene.h" />
+    <ClInclude Include="ScoreScene.h" />
     <ClInclude Include="Sound.h" />
     <ClInclude Include="Sprite.h" />
     <ClInclude Include="Texture2D.h" />

@@ -4,6 +4,8 @@
 #include "Sprite.h"
 #include "Camera.h"
 #include "MainScene.h"
+#include "ScoreScene.h"
+#include "Label.h"
 #include "Worm.h"
 #include "Fruit.h"
 #include "Walls.h"
@@ -12,8 +14,7 @@ class GameScene :
 {
 public:
 	Worm* asdf;
-	POINT pos;
-	//vector<Sprite*> walls;
+	Label* label;
 	float timer;
 	float movetime;
 	void Init() override;

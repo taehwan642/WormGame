@@ -5,21 +5,24 @@ void GameScene::Init()
 {
 	cout << "Game" << endl;
 	asdf = new Worm();
+	label = new Label();
 	timer = 0;
 	movetime = 0.4f;
+	Time::score = 0;
 	FruitMNG::GetInstance()->SpawnFruit();
 	WallsMNG::GetInstance()->SetWallPosition();
 }
 
 void GameScene::Update()
 {
+	label->Create_Label(Time::score, {10,10});
+
 	if (DXUTWasKeyPressed('P'))
-		Director::GetInstance()->ChangeScene(new MainScene);
+		Director::GetInstance()->ChangeScene(new ScoreScene);
 
 	if (asdf->IsScreenOut())
 	{
-		cout << "GG" << endl;
-		Director::GetInstance()->ChangeScene(new MainScene);
+		Director::GetInstance()->ChangeScene(new ScoreScene);
 	}
 
 	timer += Time::deltaTime;
@@ -29,7 +32,7 @@ void GameScene::Update()
 		asdf->WormMove();
 		if (asdf->IsCollision())
 		{
-			Director::GetInstance()->ChangeScene(new MainScene);
+			Director::GetInstance()->ChangeScene(new ScoreScene);
 		}
 		timer = 0;
 	}
@@ -38,6 +41,8 @@ void GameScene::Update()
 	{
 		if (movetime >= 0.15f)
 			movetime -= 0.05f;
+
+		Time::score++;
 	}
 
 	if (DXUTWasKeyPressed('W'))
@@ -63,4 +68,5 @@ void GameScene::OnExit()
 	asdf->DeleteAll();
 	WallsMNG::GetInstance()->DeleteWalls();
 	FruitMNG::GetInstance()->DeleteFruit();
+	label->Delete_Label();
 }

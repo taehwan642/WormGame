@@ -1,10 +1,10 @@
-﻿  MainScene.cpp
-C:\Users\skill_7\Desktop\going to make new map\WormGame-master\MainScene.cpp(58): warning C4238: 비표준 확장이 사용됨: 클래스 rvalue를 lvalue로 사용했습니다.
-C:\Users\skill_7\Desktop\going to make new map\WormGame-master\MainScene.cpp(62): warning C4238: 비표준 확장이 사용됨: 클래스 rvalue를 lvalue로 사용했습니다.
-C:\Users\skill_7\Desktop\going to make new map\WormGame-master\MainScene.cpp(66): warning C4238: 비표준 확장이 사용됨: 클래스 rvalue를 lvalue로 사용했습니다.
-C:\Users\skill_7\Desktop\going to make new map\WormGame-master\MainScene.cpp(70): warning C4238: 비표준 확장이 사용됨: 클래스 rvalue를 lvalue로 사용했습니다.
-C:\Users\skill_7\Desktop\going to make new map\WormGame-master\MainScene.cpp(58,37): warning C4238: 비표준 확장이 사용됨: 클래스 rvalue를 lvalue로 사용했습니다.
-C:\Users\skill_7\Desktop\going to make new map\WormGame-master\MainScene.cpp(62,37): warning C4238: 비표준 확장이 사용됨: 클래스 rvalue를 lvalue로 사용했습니다.
-C:\Users\skill_7\Desktop\going to make new map\WormGame-master\MainScene.cpp(66,36): warning C4238: 비표준 확장이 사용됨: 클래스 rvalue를 lvalue로 사용했습니다.
-C:\Users\skill_7\Desktop\going to make new map\WormGame-master\MainScene.cpp(70,31): warning C4238: 비표준 확장이 사용됨: 클래스 rvalue를 lvalue로 사용했습니다.
+﻿  ENGINE_1.cpp
+  ScoreScene.cpp
+C:\Users\skill_7\Desktop\going to make new map\WormGame-master\ENGINE_1.cpp(18,12): warning C4244: '인수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\skill_7\Desktop\going to make new map\WormGame-master\ScoreScene.cpp(34): warning C4238: 비표준 확장이 사용됨: 클래스 rvalue를 lvalue로 사용했습니다.
+C:\Users\skill_7\Desktop\going to make new map\WormGame-master\ScoreScene.cpp(40): warning C4238: 비표준 확장이 사용됨: 클래스 rvalue를 lvalue로 사용했습니다.
+C:\Users\skill_7\Desktop\going to make new map\WormGame-master\ScoreScene.cpp(34,36): warning C4238: 비표준 확장이 사용됨: 클래스 rvalue를 lvalue로 사용했습니다.
+  코드를 생성하고 있습니다...
+C:\Users\skill_7\Desktop\going to make new map\WormGame-master\ScoreScene.cpp(40,36): warning C4238: 비표준 확장이 사용됨: 클래스 rvalue를 lvalue로 사용했습니다.
+Camera.obj : warning LNK4075: '/EDITANDCONTINUE'이(가) '/SAFESEH' 사양으로 인해 무시됩니다.
   ENGINE_1_2010.vcxproj -> C:\Users\skill_7\Desktop\going to make new map\WormGame-master\Debug\ENGINE_1.exe
